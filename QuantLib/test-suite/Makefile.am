@@ -2,6 +2,7 @@
 QL_TESTS = \
 	quantlibtestsuite.cpp \
 	americanoption.hpp americanoption.cpp \
+	amortizingbond.hpp amortizingbond.cpp \
 	array.hpp array.cpp \
 	asianoptions.hpp asianoptions.cpp \
 	assetswap.hpp assetswap.cpp \
@@ -15,6 +16,7 @@ QL_TESTS = \
 	blackformula.hpp blackformula.cpp \
 	bonds.hpp bonds.cpp \
 	brownianbridge.hpp brownianbridge.cpp \
+	businessdayconventions.hpp businessdayconventions.cpp \
 	calendars.hpp calendars.cpp \
 	capfloor.hpp capfloor.cpp \
 	capflooredcoupon.hpp capflooredcoupon.cpp \
@@ -39,6 +41,8 @@ QL_TESTS = \
 	digitaloption.hpp digitaloption.cpp \
 	distributions.hpp distributions.cpp \
 	dividendoption.hpp dividendoption.cpp \
+	doublebarrieroption.hpp doublebarrieroption.cpp \
+	doublebinaryoption.hpp doublebinaryoption.cpp \
 	europeanoption.hpp europeanoption.cpp \
 	everestoption.hpp everestoption.cpp \
 	exchangerate.hpp exchangerate.cpp \
@@ -87,6 +91,7 @@ QL_TESTS = \
 	money.hpp money.cpp \
 	noarbsabr.hpp noarbsabr.cpp \
 	nthtodefault.hpp nthtodefault.cpp \
+	numericaldifferentiation.hpp numericaldifferentiation.cpp \
 	ode.hpp ode.cpp \
 	operators.hpp operators.cpp \
 	optimizers.hpp optimizers.cpp \
@@ -130,13 +135,15 @@ QL_TESTS = \
 	varianceoption.hpp varianceoption.cpp \
 	varianceswaps.hpp varianceswaps.cpp \
 	volatilitymodels.hpp volatilitymodels.cpp \
-	vpp.hpp vpp.cpp
+	vpp.hpp vpp.cpp \
+	zabr.hpp zabr.cpp
 
 QL_BENCHMARKS = \
 	quantlibbenchmark.cpp \
 	americanoption.hpp americanoption.cpp \
 	asianoptions.hpp asianoptions.cpp \
 	barrieroption.hpp barrieroption.cpp \
+	doublebarrieroption.hpp doublebarrieroption.cpp \
 	basketoption.hpp basketoption.cpp \
 	batesmodel.hpp batesmodel.cpp \
 	convertiblebonds.hpp convertiblebonds.cpp \
@@ -211,10 +218,8 @@ EXTRA_DIST = \
 	README.txt \
 	testsuite_vc8.vcproj \
 	testsuite_vc9.vcproj \
-	testsuite_vc10.vcxproj \
-	testsuite_vc10.vcxproj.filters \
-	testsuite_vc11.vcxproj \
-	testsuite_vc11.vcxproj.filters \
+	testsuite.vcxproj \
+	testsuite.vcxproj.filters \
 	testsuite.dev
 
 else
@@ -225,10 +230,8 @@ EXTRA_DIST = \
 	README.txt \
 	testsuite_vc8.vcproj \
 	testsuite_vc9.vcproj \
-	testsuite_vc10.vcxproj \
-	testsuite_vc10.vcxproj.filters \
-	testsuite_vc11.vcxproj \
-	testsuite_vc11.vcxproj.filters \
+	testsuite.vcxproj \
+	testsuite.vcxproj.filters \
 	testsuite.dev
 
 endif
